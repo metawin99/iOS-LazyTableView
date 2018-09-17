@@ -105,7 +105,7 @@
 				TargetAttributes = {
 					7F511E5E1CF8DCF900C07C3D = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = G9UGV3XBCW;
+						DevelopmentTeam = ACJ6PD7A2R;
 					};
 				};
 			};
@@ -262,10 +262,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ACJ6PD7A2R;
 				INFOPLIST_FILE = "iOS-LazyTableView-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.jaredstef.iOS-LazyTableView-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -273,10 +275,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ACJ6PD7A2R;
 				INFOPLIST_FILE = "iOS-LazyTableView-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.jaredstef.iOS-LazyTableView-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -299,6 +303,7 @@
 				7F511E731CF8DCF900C07C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,7 +10,7 @@ import UIKit
 
 @objc protocol L3SDKLazyTableViewDelegate
 {
-    optional func tableView(tableView: UITableView, lazyLoadNextCursor cursor: Int)
+    @objc optional func tableView(tableView: UITableView, lazyLoadNextCursor cursor: Int)
 }
 
 class L3SDKLazyTableView: UITableView, UITableViewDelegate
@@ -47,13 +47,12 @@ class L3SDKLazyTableView: UITableView, UITableViewDelegate
     }
     
     // MARK: UITableView UIScrollView Override
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView)
-    {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let endScrolling: CGFloat = scrollView.contentOffset.y + scrollView.frame.size.height
 
         if (endScrolling >= scrollView.contentSize.height)
         {
-            self.senderDelegate?.tableView?(self, lazyLoadNextCursor: self.lazyLoad.nextCursor())
+            self.senderDelegate?.tableView?(tableView: self, lazyLoadNextCursor: self.lazyLoad.nextCursor())
             currentCursor = self.lazyLoad.currentCursor
         }
     }
